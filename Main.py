@@ -24,20 +24,49 @@ t_CRD = r'\]'
 t_OPERATEUR = r'<=|>=|!=|==|<|>'
 t_commentaire = r'\#\#.*'
 t_FIN_I = r'\#'
-t_SI = r'If'
-t_SINON = r'Else'
-t_DEB_SI = r'Begin'
-t_FIN_SI = r'End'
-t_IMPRIMER = r'Snk_Print'
-t_DEB_SNK = r'Snk_Begin'
-t_FIN_SNK = r'Snk_End'
-t_ENTIER = r'Snk_Int'
-t_REEL = r'Snk_Real'
-t_CHAINE = r'Snk_Strg'
-t_SET = r'Set'
-t_GET = r'Get'
-t_FROM = r'From'
 t_ignore = ' \t'
+
+def t_DEB_SNK(t):
+    r'Snk_Begin'
+    return t
+
+def t_FIN_SNK(t):
+    r'Snk_End'
+    return t
+def t_IMPRIMER(t):
+    r'Snk_Print'
+    return t
+    return t
+def t_ENTIER(t):
+    r'Snk_Int'
+    return t
+def t_EEEL(t):
+    r'Snk_Real'
+    return t
+def t_CHAINE(t):
+    r'Snk_Strg'
+    return t
+def t_SET(t):
+    r'Set'
+    return t
+def t_GET(t):
+    r'Get'
+    return t
+def t_FROM(t):
+    r'From'
+    return t
+def t_SI(t):
+    r'If'
+    return t
+def t_SINON(t):
+    r'Else'
+    return t
+def t_DEB_SI(t):
+    r'Begin'
+    return t
+def t_FIN_SI(t):
+    r'End'
+    return t
 
 
 def t_newline(t):
